@@ -10,8 +10,8 @@ namespace UserRegistration
             UserInfo obj = new UserInfo();
             //obj.FirstName();
             //obj.LastName();
-            obj.EmailID();
-
+            //obj.EmailID();
+            obj.MobileNumber();
         }
     }
 }

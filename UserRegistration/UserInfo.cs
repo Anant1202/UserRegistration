@@ -12,6 +12,7 @@ namespace UserRegistration
         public const string fname = "^[A-Z]{1}[A-Za-z]{2,}$";
         public const string lname = "^[A-Z]{1}[A-Za-z]{2,}$";
         public const string email = @"^[a-zA-Z0-9]+([\.\+\-][a-zA-Z0-9]+)?@[a-zA-Z0-9]+(\.[a-zA-Z]{2,}(\.[a-zA-Z]+)?)$";
+        public const string Mobile = @"^[0-9]+[\s]+[0-9]{10}$";
         public void FirstName()
         {
             Regex reg = new Regex(fname);
@@ -48,6 +49,20 @@ namespace UserRegistration
             if (reg.IsMatch(eId))
             {
                 Console.WriteLine("Email id is Valid");
+            }
+            else
+            {
+                Console.WriteLine("Not Valid");
+            }
+        }
+        public void MobileNumber()
+        {
+            Regex reg = new Regex(Mobile);
+            Console.WriteLine("\nEnter the Mobile Number:");
+            string Mnumber = Console.ReadLine();
+            if (reg.IsMatch(Mnumber))
+            { 
+                Console.WriteLine("Mobile Number is Valid");
             }
             else
             {
