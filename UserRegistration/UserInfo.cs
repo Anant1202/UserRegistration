@@ -14,7 +14,7 @@ namespace UserRegistration
         public const string email = @"^[a-zA-Z0-9]+([\.\+\-][a-zA-Z0-9]+)?@[a-zA-Z0-9]+(\.[a-zA-Z]{2,}(\.[a-zA-Z]+)?)$";
         public const string Mobile = @"^[0-9]+[\s]+[0-9]{10}$";
         //public const string password= "^[a-zA-Z0-9]{8,}$";
-        public const string password= "^(?=.*[A-Z]).{8,}$";
+        public const string password= "^(?=.*[A-Z])(?=.*[0-9]).{8,}$";
         public void FirstName()
         {
             Regex reg = new Regex(fname);
