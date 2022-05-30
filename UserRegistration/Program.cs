@@ -8,8 +8,10 @@ namespace UserRegistration
         {
             Console.WriteLine("Welcome to User Registration System Program");
             UserInfo obj = new UserInfo();
-            obj.FirstName();
-            obj.LastName();
+            //obj.FirstName();
+            //obj.LastName();
+            obj.EmailID();
+
         }
     }
 }
