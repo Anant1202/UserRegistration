@@ -11,7 +11,8 @@ namespace UserRegistration
             //obj.FirstName();
             //obj.LastName();
             //obj.EmailID();
-            obj.MobileNumber();
+            //obj.MobileNumber();
+            obj.Password();
         }
     }
 }
